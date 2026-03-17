@@ -22,3 +22,8 @@ function removerClasses (){
     const resultado = document.getElementById("resultado")
     resultado.classList.remove('apto', 'nao-apto')
 }
+// Funções puras
+function calcularPrecoFinal(preco, desconto) {
+    const valorEconomizado = calcularValorEconomizado(preco, desconto)
+    return preco - valorEconomizado
+}

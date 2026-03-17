@@ -110,6 +110,30 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
+.resultado.imc1{
+  border: 2px solid #1e3a5f;
+  box-shadow: 0 0 8px #1e3a5f ;
+}
+.resultado.imc2{
+  border: 2px solid #14532d;
+  box-shadow: 0 0 8px #14532d ;
+}
+.resultado.imc3{
+  border: 2px solid #713f12;
+  box-shadow: 0 0 8px #713f12 ;
+}
+.resultado.imc4{
+  border: 2px solid #7f1d1d;
+  box-shadow: 0 0 8px #7f1d1d ;
+}
+.resultado.imc5{
+  border: 2px solid #6b0f0f;
+  box-shadow: 0 0 8px #6b0f0f ;
+}
+.resultado.imc6{
+  border: 2px solid #450a0a;
+  box-shadow: 0 0 8px #450a0a;
+}
 
 footer {
   display: flex;

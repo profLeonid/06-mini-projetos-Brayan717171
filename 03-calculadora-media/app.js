@@ -6,6 +6,24 @@ function calcularMedia(){
     const nota3 = parseFloat(document.getElementById("3").value)
     const resultado = document.getElementById("resultado")
 
-    const notaCalculada = (Number(nota1) + Number(nota2) + Number(nota3)) / 3
-    resultado.textContent = `Sua nota é : ${(notaCalculada).toFixed(2)}`
+    const notaCalculada = (nota1 + nota2 + nota3) / 3  
+    removerClasses()
+
+    if(notaCalculada >= 7 ){                           
+        resultado.textContent = `Sua nota é: ${notaCalculada.toFixed(2)} — Aprovado`
+        resultado.classList.add("media1")
+
+    }else if(notaCalculada >= 5  && notaCalculada <= 6.9){
+        resultado.textContent = `Sua nota é: ${notaCalculada.toFixed(2)} — Recuperação`
+        resultado.classList.add("media2")
+
+    }else if(notaCalculada < 5){                       
+        resultado.textContent = `Sua nota é: ${notaCalculada.toFixed(2)} — Reprovado`
+        resultado.classList.add("media3")
+    }
+}
+
+function removerClasses(){ 
+    const resultado = document.getElementById("resultado")
+    resultado.classList.remove('media1', 'media2', 'media3')
 }
