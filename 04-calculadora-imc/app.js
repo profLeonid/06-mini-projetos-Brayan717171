@@ -1,5 +1,6 @@
 "use strict"
 
+
 // Funções puras
 const calcularIMC = (peso, altura) => peso / (altura * altura)
 
@@ -36,5 +37,5 @@ function calcularResultado() {
 
     removerClasses(resultado)
     resultado.classList.add(classe)  
-    resultado.textContent = `${nome}, seu IMC é ${resultadoFinal.toFixed(2)} — ${classificacao}` 
+    resultado.textContent = `${nome}, seu IMC é ${resultadoFinal.toFixed(2)}  ${classificacao}` 
 }
